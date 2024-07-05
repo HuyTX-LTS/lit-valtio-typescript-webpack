@@ -1,0 +1,30 @@
+{
+  "name": "lit_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:pro": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "dev": "webpack serve --mode development --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "dotenv": "^16.4.5",
+    "lit": "^3.1.4",
+    "valtio": "^1.13.2"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

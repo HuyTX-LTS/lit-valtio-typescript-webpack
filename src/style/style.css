@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* user input */
+.user-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.user-input textarea {
+  width: 100%;
+}
+
+/* timeline talk */
+.container-timeline {
+  padding-top: 20px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.timeline {
+  display: flex;
+  gap: 10px;
+}
+
+.timeline:not(:first-child) {
+  padding: 10px 0;
+}
+
+.ai {}
+
+.user {
+  flex-direction: row-reverse;
+}
+
+.container-timeline img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Skeleton css */
+.skeleton-loading {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-item {
+  height: 20px;
+  width: 100%;
+  background-color: #cccccc;
+  margin-bottom: 10px;
+  animation: loading-animation 1.0s ease-in-out infinite;
+}
+
+@keyframes loading-animation {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}

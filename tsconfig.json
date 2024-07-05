@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    },
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
